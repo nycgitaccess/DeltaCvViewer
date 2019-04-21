@@ -6,7 +6,7 @@ class PdfViwer extends Component {
  
     return (
       <div>
-       <img src='https://i.imgur.com/Wmx7jIg.jpg'></img>
+       <img src='https://i.imgur.com/Wmx7jIg.jpg' alt='cvPdf'></img>
       </div>
     );
   }
