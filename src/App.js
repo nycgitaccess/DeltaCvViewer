@@ -3,6 +3,7 @@ import {Sidebar} from './components/sidebar/sidebar';
 import TopNav from './components/topNavigation/topNav';
 import Body from './components/body/body';
 import Data from './components/body/data/cvSunmmaryInfo'
+import AboutUs from './components/About/AboutUs'
 class App extends Component {
   constructor(){
     super()
@@ -17,6 +18,9 @@ class App extends Component {
     return(<h1>Welcome to the Login page</h1>)
   }
   render() {
+    let about = Data.map(data=>{
+      return(<AboutUs name={data.name} summary={data.summary}/>)
+    })
     return (
       <div className="App">
           <TopNav loginStatus={this.state.IsLoggedIn} key='its working'/>

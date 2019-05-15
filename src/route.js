@@ -4,6 +4,8 @@ import App from './App';
 import Login from './components/signInOrUp/login'
 import SignUp from './components/signInOrUp/signUp'
 import PdfViwer from './components/pdfViwer/pdfV'
+import Userprofile from './components/Usersprofiles/Userprofile';
+import AboutUs from './components/About/AboutUs'
 
 
 
@@ -17,6 +19,8 @@ class Routes extends Component {
               <Route path="/login" component={Login} />
               <Route path="/signup" component={SignUp} />
               <Route path="/pdf" component={PdfViwer} />
+              <Route path="/profile" component={Userprofile}/> 
+              <Route path="/About" component={AboutUs}/>
               <Route component={Error} />
             </Switch>
           </div>
