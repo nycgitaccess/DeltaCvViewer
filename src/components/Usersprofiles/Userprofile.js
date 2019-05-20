@@ -3,11 +3,16 @@ import Image from 'react-bootstrap/Image'
 import Button from 'react-bootstrap/Button'
 import  "./Userprofile.css"
 
-
 const Userprofile = (props)=>{
-
+const Mystyle = {
+  padding: "20px 20px 20px 20px",
+    borderbottom: "1px ridge", 
+    background: "lightblue",
+    border: "solid #ffc787 2px"
+}
   return(
-    <div className=" container col-md-9 ">
+    <div className=" container col-md-9 " style={Mystyle}>
+      <h2>User profile</h2>
      <div className="thumbnail col-md-4 " >
         <Image width="100%" src={"https://scontent.fath6-1.fna.fbcdn.net/v/t1.0-9/13466022_265949933765485_2302318879502977296_n.jpg?_nc_cat=104&_nc_ht=scontent.fath6-1.fna&oh=c99dac87503db326fd8c65c761055e0b&oe=5D3C3803"} roundedCircle />
          <h3>victor unuese</h3>
@@ -42,6 +47,7 @@ const Userprofile = (props)=>{
      <div className="col-7 col-sm-5"><input type="file" name="file" />
        <input type="submit"></input>
        </div>
+ 
     </div>
   )
 

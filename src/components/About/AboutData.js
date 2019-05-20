@@ -1,4 +1,4 @@
-export default [
+const AboutData = [
     {
         'id': 0,
         'name':'Hasanu Zzaman',
@@ -35,3 +35,5 @@ export default [
         'summary' :"Experienced Owner with a demonstrated history of working in the computer software industry. Skilled in Customer Service, Sales, Strategic Planning, Filemaker, and Social Media. Strong business development professional with a Bachelor's degree focused in Department of Civil Engineering from Western Greece University of Applied Sciences.."
     },
 ]
+
+export default AboutData
